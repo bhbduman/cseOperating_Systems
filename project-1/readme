@@ -1,0 +1,13 @@
+
+    To keep shell code simple i used a0 so before you make syscall you should load approproate number into $a0 register(1:Showprimes, 2:Factorize, 3:Bubblesort) so according to numbers i run related file. Then you should make syscall with 18 within $v0
+you can find the explanation in syscall.cpp file
+
+USAGE:
+    I defined new process CREATE_PROCESS_SYSCALL in header as 18
+    I did not change makefile.
+    You just need to put asm files and syscall.cpp into related places
+    $make command
+    ./spim -file shell.asm
+
+You will face with a menu I printed enough information as many i could
+You should just follow the instructions
